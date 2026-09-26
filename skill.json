@@ -1,0 +1,33 @@
+{
+  "name": "genpark-voice-turn-taking-endpoint-detector-skill",
+  "version": "1.0.0",
+  "description": "Real-time acoustic VAD & semantic turn-completion endpoint detector distinguishing mid-sentence hesitation pauses from finished speech turns.",
+  "category": "Service",
+  "author": "AlphaPark",
+  "tags": [
+    "voice-agent",
+    "turn-taking",
+    "vad",
+    "speech-endpointing",
+    "zero-dependency",
+    "mcp"
+  ],
+  "tools": [
+    {
+      "name": "analyze_turn_status",
+      "description": "Evaluate multi-modal turn endpointing from acoustic energy and trailing transcript context."
+    },
+    {
+      "name": "calibrate_acoustic_thresholds",
+      "description": "Calibrate background noise floor and silence threshold adaptively."
+    },
+    {
+      "name": "predict_semantic_closure",
+      "description": "Compute semantic sentence completion likelihood and trailing connective score."
+    },
+    {
+      "name": "run_benchmark_turn_detection",
+      "description": "Execute deterministic turn-taking endpointing test scenarios."
+    }
+  ]
+}
